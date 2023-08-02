@@ -1,0 +1,5 @@
+{
+  "watch": ["src"],
+  "ext": "ts",
+  "exec": "NODE_ENV=development POSTGRES_HOST=localhost ts-node ./src/index.ts"
+}

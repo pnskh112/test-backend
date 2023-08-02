@@ -1,0 +1,10 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 4000:4000
+    env_file:
+      - .env
+    command: /bin/bash -c "npm run migrate:run && node ./dist/index.js"
